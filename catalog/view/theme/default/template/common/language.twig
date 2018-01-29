@@ -1,0 +1,21 @@
+{% if languages|length > 1 %}
+<div class="dropdown-menu">
+	{% for language in languages %}
+      {% if language.code == code %} 
+	<a href="javascript:void(0);" class="dropdown-btn ti-arrow-drop-down"><img src="catalog/language/{{ language.code }}/{{ language.code }}.png" alt="{{ language.name }}" title="{{ language.name }}">{{ language.name }}</a>
+	{% endif %}
+      {% endfor %}
+	<ul>
+		<form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-language">
+		{% for language in languages %}
+			<!--<li><a href="{{ home }}&lang=en-gb"><img src="catalog/view/theme/default/assets/img/en.png" alt=""> {{ language.name }}</a></li>-->
+			<!--<li><a href="{{ home }}&lang=ar"><img src="catalog/view/theme/default/assets/img/ar.png" alt=""> {{ language.name }}</a></li>-->
+			<li><button class="btn btn-link btn-block language-select"  style="border: none;background-color: rgba(0,0,0,0);color: #fff;padding: 0!important;width: 100%;margin: 0!important;" type="button" name="{{ language.code }}"><img src="catalog/language/{{ language.code }}/{{ language.code }}.png" alt="{{ language.name }}" title="{{ language.name }}" /> {{ language.name }}</button></li>
+      {% endfor %}
+			<input type="hidden" name="code" value="" />
+			<input type="hidden" name="redirect" value="{{ redirect }}" />
+	  </form>
+		
+	</ul>
+</div>
+{% endif %}

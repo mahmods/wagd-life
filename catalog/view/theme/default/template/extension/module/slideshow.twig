@@ -1,0 +1,26 @@
+<!-- Home Slider -->
+        <div class="home-slider">
+        
+          {% for banner in banners %}
+            <!-- item -->
+            <div class="item">
+                <div class="container">
+                    <div class="row row-zCenter row-reverse">
+                        <div class="col-s-12 col-m-5">
+                          {% if banner.link %}<a href="{{ banner.link }}" class="image" data-price="100$"><img src="{{ banner.image }}" alt=""></a>{% else %}<a href="#" class="image" data-price="100$"><img src="{{ banner.image }}" alt=""></a>{% endif %}
+                        </div>
+                        <div class="col-s-12 col-m-7 col-l-6">
+                            <a href="#"><h3>{{ banner.title }}</h3></a>
+                            <!--<p>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // item -->
+          {% endfor %}
+          
+            
+            
+        </div>
+        <!-- // Home Slider -->
+        

@@ -1,0 +1,31 @@
+<!-- testimonials -->
+        <div class="testimonials-section">
+            <div class="container">
+                <div class="section-title">
+					<h2>{{heading_title}}</h2>
+                </div>
+                
+                <div class="testimonials-slider row">
+                {% if reviews %}
+        {% for review in reviews %}
+        <!-- testimonials block -->
+        <div class="testimonials-block col-s-12 col-m-6 col-l-4">
+            <div class="content-box">
+                <a href="#" class="avatar"><img src="catalog/view/theme/default/assets/img/avatar-1.png" alt=""></a>
+                <div class="stars">
+                    {% for i in 1..5 %}
+                    {% if review.rating < i %} <span class="ti-star"></i></span> {% else %} <span class="ti-star active"></span> {% endif %}
+                    {% endfor %}
+                </div>
+                <h3>{{ review.author }}</h3>
+                <p>{{ review.text }}</p>
+            </div>
+        </div>
+        <!-- // testimonials block -->
+        {% endfor %}
+        {% endif %}
+                   
+                </div>
+            </div>
+        </div>
+        <!-- // testimonials -->

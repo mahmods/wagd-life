@@ -1,0 +1,110 @@
+<style>
+.advancedSearch{ border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-top: 20px; }
+</style>
+<div class='advancedSearch container'>
+    <div class='row'>
+        <div class='col-l-12 col-s-12 col-m-12 col-x-12'>
+            <form id="advForm" class='form-ui tornado-ui'>
+                <input type="hidden" name="route" value="product/category">
+                <div class="col-l-10 col-m-10 col-s-12 col-x-12">
+                    {% for category in categories %}
+                        <label class="category-radio"><input class="btn rounded secondary" type="radio" name="path" value="{{ category.id }}" data-category="{{category.name}}"/><span>{{category.name}}</span></label>
+                    {% endfor %}
+                </div>
+                <div class='col-l-5 col-s-12 col-m-5 col-x-12'>
+                  <select id="manufacturers" name="filter_manf">
+                      <option class="default" value="default">Select Manufacturer</option>
+                  </select>
+                </div>
+                <div  class='col-l-5 col-s-12 col-m-5 col-x-12'>
+                  <select id="models" name="models">
+                    <option class="default" value="default">Select Model</option>
+                  </select>
+                </div>
+                <div id="collapse-checkout-option" class='col-l-2 col-s-12 col-m-5 col-x-12'>
+                    <input type="button" id="adv_search" class='btn' value="{{search_btn}}">
+                    <div class="panel-body"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+  $('input[name="path"]').on('click', function(e) {
+    category = $(this).val();
+    $.ajax({
+        type: "POST",
+        url: 'http://preview.mahacode.com/openc/index.php?route=product/manufacturers',
+        data: {category_id: category },
+        beforeSend: function() {
+            $('#manufacturers').attr('disabled', 'disabled');
+            $('#manufacturers').val('default').change();
+            $('#manufacturers option.default').text('Loading Manufacturers ...');
+            $('#models').attr('disabled', 'disabled');
+            $('#models').val('default').change();
+            $('#models option.default').text('Loading Models ...');
+        },
+        success: function(data) {
+          console.log(data);
+          if (data[0].length > 0) {
+              $('#manufacturers').find('option').not(':first').remove();
+              data[0].forEach(element => {
+                  $('#manufacturers').append($("<option name='filter_models[]'></option>")
+                    .attr("value",element.filter_id)
+                    .text(element.name));
+              });
+              $('#manufacturers option.default').text('Select Manufacturer');
+              $('#models option.default').text('Select Model');
+              $('#manufacturers').removeAttr('disabled');
+          }
+      }
+    })
+
+
+    
+  });
+
+  $('input[data-category="SpO2"]').click();
+
+  var filter_manufacturer = '';
+  $('#manufacturers').on('change', function() {
+    manufacturer = $(this).val();
+    category = $('input[name="path"]:checked').val();
+    $.ajax({
+      type: "POST",
+      url: 'http://preview.mahacode.com/openc/index.php?route=product/models',
+      data: {manf_id: manufacturer, category_id: category},
+      beforeSend: function() {
+        $('#models').val('default').change();
+        $('#models option.default').text('Loading Models ...');
+      },
+      success: function(data) {
+        console.log(data);
+        if (data[0].length > 0) {
+            $('#models').find('option').not(':first').remove();
+            data[0].forEach(element => {
+                $('#models').append($("<option name='filter_models[]'></option>")
+                  .attr("value",element.filter_id)
+                  .text(element.name));
+            });
+            filter_count = data[0].length;
+            $('#models').val('default').change();
+            $('#models option.default').text('Models (' + filter_count + ')');
+            $('#models').removeAttr('disabled');
+            $('#models').focus();
+        }
+      }
+    })
+  });
+  $('#adv_search').on('click', function(e) {
+    e.preventDefault();
+    var category = $('input[name=path]:checked').val();
+    var manf = $('#manufacturers').val();
+    var model = $('#models').val();
+    window.location.href = 'http://preview.mahacode.com/openc/index.php?route=product/category&path=' + category + '&' + 'filter_manf=' + manf + '&filter=' + model;
+  });
+</script>
+<style>
+    .hidden {display: none;}
+</style>

@@ -1,0 +1,53 @@
+{% if categories %}
+<!-- Bottom Nav -->
+        <div class="bottom-nav">
+            <div class="container">
+                <div class="navigation-menu">
+                    <ul>
+                        {% for category in categories %}
+                        {% if category.children %}
+                        <li><a href="{{ category.href }}">{{ category.name }}</a>
+                          {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+                          <ul>
+                          	{% for child in children %}
+                			<li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                			{% endfor %}
+                          </ul>
+                          {% endfor %}
+                      	</li>
+                      {% else %}
+        				<li><a href="{{ category.href }}">{{ category.name }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <a href="#" class="ti-android-search" data-modal="search-box"></a>
+            </div>
+        </div>
+        <!-- // Bottom Nav -->
+<!-- Search Box -->
+        <div class="modal-box tornado-ui" id="search-box">
+            <div class="modal-content">
+                <div class="modal-head">
+					{{text_search}}
+                    <span class="close-modal ti-clear"></span>
+                </div>
+                <div id="search" class="form-ui modal-body">
+		  <input name="search" type="text" placeholder="{{search_placeholder}}">
+       		  <button type="button" class="btn primary round-corner">{{text_search_now}}</button>
+                </div>
+            </div>
+        </div>
+        <!-- // Search Box --> 
+		 <!-- Item Removed Modal -->
+        <div class="modal-box tornado-ui danger" id="cart-removed">
+            <div class="modal-content pro">
+                <span class="close-modal ti-clear"></span>
+                <i class="ti-trash-b-io"></i>
+                <h3>Item Has Been Removed From Cart</h3>
+                <p></p>
+            </div>
+        </div>
+        <!-- // Item Removed Modal -->
+{% endif %}

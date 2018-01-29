@@ -1,0 +1,54 @@
+<!-- Categorys Section -->
+<div class="categorys-section">
+  <div class="container">
+      <div class="section-title">
+		  <h2>{{heading_title}}ssssssssssssssssssssssssss</h2>
+      </div>
+      
+      <div class="row row-stretch">
+          {% for category in categories %}
+          {% if category.category_id == category_id %} 
+          <!-- Categorys Block -->
+          <div class="categorys-block col-s-12 col-m-6 col-l-4">
+              <div class="content-box">
+                  <a href="{{ category.href }}" class="image"><img src="{{ category.image }}" alt=""></a>
+                  <a href="{{ category.href }}"><h3>{{ category.name }}</h3></a>
+                  <ul>
+                      {% if category.children %}
+                      {% for child in category.children %}
+                      {% if child.category_id == child_id %}
+                      <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                      {% else %} 
+                      <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                      {% endif %}
+                      {% endfor %}
+                      {% endif %}
+                  </ul>
+              </div>
+          </div>
+          {% else %}
+          <!-- Categorys Block -->
+          <div class="categorys-block col-s-12 col-m-6 col-l-4">
+              <div class="content-box">
+                  <a href="{{ category.href }}" class="image"><img src="{{ category.image }}" alt=""></a>
+                  <a href="{{ category.href }}"><h3>{{ category.name }}</h3></a>
+                  <ul>
+                      {% if category.children %}
+                      {% for child in category.children %}
+                      {% if child.category_id == child_id %}
+                      <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                      {% else %} 
+                      <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                      {% endif %}
+                      {% endfor %}
+                      {% endif %}
+                  </ul>
+              </div>
+          </div>
+          <!-- // Categorys Block -->
+          {% endif %}
+          {% endfor %}
+      </div>
+  </div>
+</div>
+<!-- // Categorys Section -->

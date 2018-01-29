@@ -1,0 +1,47 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+<div id="account-forgotten" class="page-content container">
+  {% if error_warning %}
+  <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}</div>
+  {% endif %}
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-s-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-s-9' %}
+    {% else %}
+    {% set class = 'col-s-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+      <h1 class="wideget-title">{{ heading_title }}</h1>
+      <p>{{ text_email }}</p>
+      <form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-ui">
+        <div class="row">
+          <div class="wideget_title">{{ text_your_email }}</div>
+          <div class="col-s-12">
+            <label for="input-email">{{ entry_email }}</label>
+              <input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control" />
+          </div>
+        </div>
+        <div class="buttons clearfix">
+          <div class="pull-left"><a href="{{ back }}" class="btn">{{ button_back }}</a></div>
+          <div class="pull-right">
+            <input type="submit" value="{{ button_continue }}" class="btn primary" />
+          </div>
+        </div>
+      </form>
+      {{ content_bottom }}</div>
+    {{ column_right }}</div>
+</div>
+{{ footer }}

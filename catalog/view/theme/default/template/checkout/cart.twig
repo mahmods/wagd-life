@@ -1,0 +1,138 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+<!-- Page Content -->
+<div class="page-content container">
+    
+  {% if attention %}
+  <div class="alert info"><i class="fa fa-info-circle"></i> {{ attention }}
+    <span class="close-alert ti-clear"></span>
+  </div>
+  {% endif %}
+  {% if success %}
+  <div class="alert success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+    <span class="close-alert ti-clear"></span>
+  </div>
+  {% endif %}
+  {% if error_warning %}
+  <div class="alert danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+    <span class="close-alert ti-clear"></span>
+  </div>
+  {% endif %}
+    <!-- Cart Table -->
+    <div class="responsive-table">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data">
+        <table class="main-table">
+            <thead>
+                <td class="col-s-1">{{ column_image }}</td>
+                <td class="col-s-4">{{ column_name }}</td>
+                <td class="col-s-2">{{ column_model }}</td>
+                <td class="col-s-3">{{ column_quantity }}</td>
+                <td class="col-s-1">{{ column_price }}</td>
+                <td class="col-s-1">{{ column_total }}</td>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                <tr>
+                  <td class="text-center"> 
+                     {% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail" /></a> {% endif %}</td>
+                  <td class="text-left"><a href="{{ product.href }}">{{ product.name }}</a> {% if not product.stock %} <span class="text-danger">***</span> {% endif %}
+                    {% if product.option %}
+                    {% for option in product.option %} <br />
+                    <small>{{ option.name }}: {{ option.value }}</small> {% endfor %}
+                    {% endif %}
+                    {% if product.reward %} <br />
+                    <small>{{ product.reward }}</small> {% endif %}
+                    {% if product.recurring %} <br />
+                    <span class="label label-info">{{ text_recurring_item }}</span> <small>{{ product.recurring }}</small> {% endif %}</td>
+                  <td class="text-left">{{ product.model }}</td>
+                  <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
+                      <input type="text" name="quantity[{{ product.cart_id }}]" value="{{ product.quantity }}" size="1" class="form-control" />
+                      <span class="input-group-btn">
+                          <!-- button href="#" onclick="cart.remove('{{ product.cart_id }}');"  data-modal="cart-removed"> remove</button> -->
+                           
+                    </span></div></td>
+                  <td class="text-right">{{ product.price }}</td>
+                  <td class="text-right">{{ product.total }}</td>
+                </tr>
+                {% endfor %}
+                {% for voucher in vouchers %}
+                <tr>
+                  <td></td>
+                  <td class="text-left">{{ voucher.description }}</td>
+                  <td class="text-left"></td>
+                  <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
+                      <input type="text" name="" value="1" size="1" disabled="disabled" class="form-control" />
+                      <span class="input-group-btn">
+                      <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="voucher.remove('{{ voucher.key }}');"><i class="fa fa-times-circle"></i></button>
+                      </span></div></td>
+                  <td class="text-right">{{ voucher.amount }}</td>
+                  <td class="text-right">{{ voucher.amount }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!-- // Cart Table -->
+    
+    <!-- Cart Buttons -->
+    <div class="cart-btns">
+        <button type="submit" class="btn update-btn"><i class="fa fa-refresh"></i> {{text_update}}</button>
+        <a href="{{ continue }}" class="btn secondary">{{text_continue}}</a>
+    </div>
+    </form>
+    
+    <div class="row cart-row row-reverse">
+        <!-- Totals Box -->
+        <div class="col-s-12 col-l-4 total-box">
+            <h2 class="area-title">{{column_total}}</h2>
+            <div class="content-box">
+                <ul class="totals-list">
+                    {% for total in totals %}
+                    <li><span>{{ total.title }}:</span> {{ total.text }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <a href="{{ checkout }}" class="btn success proc-btn">{{text_proceed}}</a>
+        </div>
+        
+        
+        <!-- Copuon Code -->
+        <div class="col-s-12 col-l-7 copuon-code form-ui">
+        
+       <!--<div class='anymsg' style='background: #eee; padding: 20px; border-radius: 7px; margin: 20px 0px;'></div>-->
+        {% if modules %}
+      <h2 class="area-title">{{ text_next }}</h2>
+      <p>{{ text_next_choice }}</p>
+       {% for module in modules %}
+        {{ module }}
+        {% endfor %} 
+      {% endif %}
+        </div>
+    </div>
+</div>
+<!-- // Page Content -->
+
+<!-- Item Removed Modal -->
+<div class="modal-box tornado-ui danger" id="cart-removed">
+    <div class="modal-content pro">
+        <span class="close-modal ti-clear"></span>
+        <i class="ti-trash-b-io"></i>
+        <h3>Item Has Been Removed From Cart</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+    </div>
+</div>
+<!-- // Item Removed Modal -->
+
+{{ footer }} 

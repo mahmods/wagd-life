@@ -1,0 +1,6 @@
+<select name="filter[2]">
+                                <option value="">Select Models</option>
+                            {% for filter in filter_groups[0]%}
+                                <option value="{{ filter.filter_id }}">{{filter.name}}</option>
+                            {% endfor %}
+                        </select>

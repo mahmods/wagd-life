@@ -1,0 +1,74 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+<div id="product-search" class="page-content container">
+  <div class="row row-reverse">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-s-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-s-9' %}
+    {% else %}
+    {% set class = 'col-s-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+      {% if products %}
+      <div class="row"> 
+          {% for product in products %}
+        <div class="col-s-12 col-m-6 col-l-4 product-block">
+          <div class="content-box">
+            <a class="image" href="{{ product.href }}">
+                <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" />
+                {% if product.tax %}
+                  <span class="discount">{{ text_tax }} {{ product.tax }}</span>
+                {% endif %} 
+            </a>
+            <div class="hvr">
+                <a class="ti-heart" href="javascript:void(0);" onclick="wishlist.add('{{ product.product_id }}');"></a>
+                <a class="ti-android-cart" href="javascript:void(0);" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"></a>
+            </div>
+            <a href="{{ product.href }}"><h3>{{ product.name }}</h3></a>
+            {% if product.price %}
+            <span class="price">
+                {% if not product.special %}
+                    {{ product.price }}
+                {% else %}
+                    {{ product.special }} <i>{{ product.price }}</i>
+                {% endif %}
+            </span>
+            {% endif %}
+            {% if product.rating %}
+            <div class="stars">
+                {% for i in 1..5 %}
+                {% if product.rating < i %}
+                <span class="ti-star active"></span>
+                {% else %}
+                <span class="ti-star"></span>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+        {{ pagination }}
+      {% else %}
+      <p>{{ text_empty }}</p>
+      <div class="buttons">
+        <div class="pull-right"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+      </div>
+      {% endif %}
+      {{ content_bottom }}</div>
+    {{ column_right }}</div>
+</div>
+{{ footer }}

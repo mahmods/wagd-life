@@ -1,0 +1,206 @@
+{{ header }}
+
+
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+
+<!-- Page Content -->
+<div class="page-content container">
+    <div class="row row-reverse">
+        <!-- Content Side -->
+        <div class="col-s-12 col-l-9">
+            <div class="row">
+              
+                {% for product in products %}
+                <!-- product block -->
+                <div class="col-s-12 col-m-6 col-l-4 product-block">
+                    <div class="content-box">
+                        <a href="{{ product.href }}" class="image"><img src="{{ product.thumb }}" alt="">
+                        
+                             {% if not product.special %}
+                                {% else %}
+                                <span class="discount">Discount</span>
+                                {% endif %}
+                                </a>
+                        <div class="hvr">
+                            <a href="#" onclick="wishlist.add('{{ product.product_id }}');" class="ti-heart"></a>
+                            <a href="#" onclick="cart.add('{{ product.product_id }}');" class="ti-android-cart" data-modal="cart-added"></a>
+                        </div>
+                        <a href="{{ product.href }}"><h3>{{ product.name }}</h3></a>
+                         {% if not product.special %}
+                            <span class="price">{{ product.price }}</span>
+                                {% else %}
+                                <span class="price">{{ product.special }} <i>{{ product.price }}</i></span>
+                                {% endif %}
+                        {% if product.rating %}
+                        <div class="stars"> 
+                          {% for i in 1..5 %}
+                            {% if product.rating < i %} <span class="ti-star active"></span> {% else %} <span class="ti-star active"></span>{% endif %}
+                            {% endfor %} 
+                        </div>
+                          {% endif %} 
+                    </div>
+                  </div>
+                <!-- // product block -->
+                {% endfor %}
+                
+            </div>
+          
+            
+            <!-- Pagination -->
+            <div class="row">
+                <div class="col-sm-6 text-left">{{ pagination }}</div>
+                <div class="col-sm-6 text-right">{{ results }}</div>
+              </div>
+        </div>
+        <!-- // Content Side -->
+        
+        <!-- Widegets Side -->
+        <div class="col-s-12 col-l-3">
+         <!-- Wideget -->
+            <div class="wideget form-ui">
+                <h3 class="wideget-title">Search</h3>
+                <div class="form-group input-group input-group-sm">
+                    <label class="input-group-addon" for="input-sort">{{ text_manufacturer }}</label>
+                    <select id="input-sort" class="form-control" onchange="location = this.value;">
+                     <option selected="selected">Filter By Brand</option>
+                      {% for manuf in manufacturer %}
+                      {% if manuf.value == '%s' %}
+                      <option value="{{ manuf.href }}">{{ manuf.name }}</option>
+                      {% else %}
+                      <option value="{{ manuf.href }}">{{ manuf.name }}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                  </div>
+                  
+                <div class="form-group input-group input-group-sm">
+                    <label class="input-group-addon" for="input-sort">{{ text_sort }}</label>
+                    <select id="input-sort" class="form-control" onchange="location = this.value;">
+                      {% for sorts in sorts %}
+                      {% if sorts.value == '%s-%s'|format(sort, order) %}
+                      <option value="{{ sorts.href }}" selected="selected">{{ sorts.text }}</option>
+                      {% else %}
+                      <option value="{{ sorts.href }}">{{ sorts.text }}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                  </div>
+                  <div class="form-group input-group input-group-sm">
+                      <label class="input-group-addon" for="input-limit">{{ text_limit }}</label>
+                      <select id="input-limit" class="form-control" onchange="location = this.value;">
+                        {% for limits in limits %}
+                        {% if limits.value == limit %}
+                        <option value="{{ limits.href }}" selected="selected">{{ limits.text }}</option>
+                        {% else %}
+                        <option value="{{ limits.href }}">{{ limits.text }}</option>
+                        {% endif %}
+                        {% endfor %}
+                      </select>
+                  </div>
+            </div>
+            <!-- // Wideget -->
+            
+            {{ column_left }}
+            
+           
+
+
+            <!-- Wideget -->
+            <div class="wideget" style="display: none;">
+                <h3 class="wideget-title">Manufactures</h3>
+                <ul>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" checked>
+                            <span>Bionet <i>(250)</i></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <!-- // Wideget -->
+            
+            <!-- Wideget -->
+            <div class="wideget" style="display: none;">
+                <h3 class="wideget-title">Set <span>A Price</span></h3>
+                
+                <div class="range-wraper">
+                    <input type="hidden" class="range-slider" data-min='0' data-max='200' value='10,100'>
+                </div>
+                <button class="btn primary round-corner">Search</button>
+            </div>
+            <!-- // Wideget -->
+            
+            <!-- Wideget -->
+            <div class="wideget" style="display: none;">
+                <h3 class="wideget-title">Rated <span>Products</span></h3>
+                
+                <!-- Small Product -->
+                <div class="small-product table-style">
+                    <i><img src="img/small.png" alt=""></i>
+                    <div class="info">
+                        <a href="#"><h3>Lorem Ipsum Dolor Sit</h3></a>
+                        <div class="stars">
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star"></span>
+                        </div>
+                        <span class="price">150$</span>
+                    </div>
+                </div>
+                <!-- // Small Product -->
+                <!-- Small Product -->
+                <div class="small-product table-style">
+                    <i><img src="img/small2.png" alt=""></i>
+                    <div class="info">
+                        <a href="#"><h3>Lorem Ipsum Dolor Sit</h3></a>
+                        <div class="stars">
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star"></span>
+                        </div>
+                        <span class="price">150$</span>
+                    </div>
+                </div>
+                <!-- // Small Product -->
+                <!-- Small Product -->
+                <div class="small-product table-style">
+                    <i><img src="img/small3.png" alt=""></i>
+                    <div class="info">
+                        <a href="#"><h3>Lorem Ipsum Dolor Sit</h3></a>
+                        <div class="stars">
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star"></span>
+                        </div>
+                        <span class="price">150$</span>
+                    </div>
+                </div>
+                <!-- // Small Product -->
+            </div>
+            <!-- // Wideget -->
+            
+            <!-- Wideget ADS -->
+            <a href="#" class="wideget-ads"><img src="img/ads3.png" alt=""></a>
+        </div>
+        <!-- // Widegets Side -->
+    </div>
+</div>
+<!-- // Page Content -->
+{{ footer }} 

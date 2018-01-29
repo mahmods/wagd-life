@@ -1,0 +1,20 @@
+<!-- Sponsers -->
+        <div class="sponsers-section">
+            <div class="container">
+                <div class="sponsers-slider row">
+                  {% for banner in banners %}
+                  <div class="item"> 
+                  {% if banner.link %}
+                  <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>
+                  {% else %}
+                  <a href="#"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>
+                  {% endif %}
+                    <!-- Item -->
+                    </div>
+                  {% endfor %}  
+                </div>
+            </div>
+        </div>
+        <!-- // Sponsers -->
+
+

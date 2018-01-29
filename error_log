@@ -1,0 +1,609 @@
+[27-Nov-2017 21:29:37 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected end of template in "__string_template__fb7216688183464d99394f3b0bdf1f3843b0a78001ccf03351fd24c36ff7b12e" at line 98. in /home/previewmahac/public_html/openc/system/library/template/Twig/TokenStream.php:59
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(41): Twig_TokenStream->next()
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compile in /home/previewmahac/public_html/openc/system/library/template/Twig/TokenStream.php on line 59
+[29-Nov-2017 19:46:19 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#1 /home/previewmahac/public_html/openc/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#2 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#3 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 10
+[29-Nov-2017 19:46:39 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#1 /home/previewmahac/public_html/openc/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#2 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#3 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 10
+[29-Nov-2017 19:46:43 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#1 /home/previewmahac/public_html/openc/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#2 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#3 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 10
+[29-Nov-2017 19:46:48 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#1 /home/previewmahac/public_html/openc/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#2 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#3 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 10
+[29-Nov-2017 19:47:41 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#1 /home/previewmahac/public_html/openc/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#2 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#3 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 10
+[29-Nov-2017 19:52:08 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#1 /home/previewmahac/public_html/openc/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#2 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#3 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 10
+[29-Nov-2017 19:57:35 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#1 /home/previewmahac/public_html/openc/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'previewm_msheri...', '654321', 'previewm_openc', '3306')
+#2 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#3 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 10
+[13-Dec-2017 09:08:11 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected "language" tag (expecting closing tag for the "for" tag defined near line 73) in "default/template/common/header.twig" at line 73. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:172
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/If.php(34): Twig_Parser->subparse(Array)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_If->parse(Object(Twig_Token))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_To in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 172
+[13-Dec-2017 09:08:29 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected "language" tag (expecting closing tag for the "for" tag defined near line 72) in "default/template/common/header.twig" at line 72. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:172
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Enviro in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 172
+[13-Dec-2017 09:09:13 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unknown "language" tag in "default/template/common/header.twig" at line 71. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:178
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('<!DOCTYPE html>...', 'default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+#6 /h in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 178
+[13-Dec-2017 09:17:32 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/previewmahac/public_html/openc/catalog/controller/common/language.php on line 3
+[13-Dec-2017 19:21:20 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "default/template/extension/module/advancedsearch.twig" (looked into: /home/previewmahac/public_html/openc/catalog/view/theme). in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('default/templat...')
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('default/templat...')
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('default/templat...', NULL)
+#3 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+#5 /home/previewmahac/pu in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php on line 215
+[13-Dec-2017 19:21:24 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "default/template/extension/module/advancedsearch.twig" (looked into: /home/previewmahac/public_html/openc/catalog/view/theme). in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('default/templat...')
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('default/templat...')
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('default/templat...', NULL)
+#3 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+#5 /home/previewmahac/pu in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php on line 215
+[13-Dec-2017 19:21:27 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "default/template/extension/module/advancedsearch.twig" (looked into: /home/previewmahac/public_html/openc/catalog/view/theme). in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('default/templat...')
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('default/templat...')
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('default/templat...', NULL)
+#3 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+#5 /home/previewmahac/pu in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php on line 215
+[13-Dec-2017 19:39:51 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected "endif" tag (expecting closing tag for the "for" tag defined near line 25) in "default/template/extension/module/advancedsearch.twig" at line 27. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:172
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(39 in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 172
+[13-Dec-2017 19:40:25 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected "endif" tag (expecting closing tag for the "for" tag defined near line 25) in "default/template/extension/module/advancedsearch.twig" at line 27. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:172
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(39 in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 172
+[19-Dec-2017 16:29:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Document::getImage() in /home/previewmahac/public_html/openc/catalog/controller/common/header.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#1 /home/previewmahac/public_html/openc/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#2 /home/previewmahac/public_html/openc/catalog/controller/common/home.php(17): Loader->controller('common/header')
+#3 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerCommonHome->index()
+#4 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#5 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#7 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#8 /home/ in /home/previewmahac/public_html/openc/catalog/controller/common/header.php on line 40
+[19-Dec-2017 16:29:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Document::getImage() in /home/previewmahac/public_html/openc/catalog/controller/common/header.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#1 /home/previewmahac/public_html/openc/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#2 /home/previewmahac/public_html/openc/catalog/controller/common/home.php(17): Loader->controller('common/header')
+#3 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerCommonHome->index()
+#4 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#5 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerStartupRouter->index()
+#6 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#7 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#8 /home/ in /home/previewmahac/public_html/openc/catalog/controller/common/header.php on line 40
+[19-Dec-2017 16:47:29 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected token "end of statement block" of value "" in "default/template/common/header.twig" at line 36. in /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php:190
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(84): Twig_ExpressionParser->parsePrimaryExpression()
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(41): Twig_ExpressionParser->getPrimary()
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/If.php(47): Twig_ExpressionParser->parseExpression()
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_If->parse(Object(Twig_Token))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twi in /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php on line 190
+[19-Dec-2017 17:32:10 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected token "name" of value "Name" ("end of print statement" expected) in "default/template/information/contact.twig" at line 58. in /home/previewmahac/public_html/openc/system/library/template/Twig/TokenStream.php:87
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(145): Twig_TokenStream->expect(4)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}\n<!...', 'default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Tw in /home/previewmahac/public_html/openc/system/library/template/Twig/TokenStream.php on line 87
+[19-Dec-2017 22:16:02 UTC] PHP Parse error:  syntax error, unexpected ''المزيد من المنت�' (T_ENCAPSED_AND_WHITESPACE) in /home/previewmahac/public_html/openc/catalog/language/ar/extension/module/latest.php on line 12
+[20-Dec-2017 12:55:47 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected character "!" in "default/template/error/not_found.twig" at line 2. in /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php:284
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header \n<!--...', 'default/templat...')
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header \n<!--...', 'default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header \n<!--...', 'default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('defa in /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php on line 284
+[20-Dec-2017 12:56:22 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected character "!" in "default/template/error/not_found.twig" at line 2. in /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php:284
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php(216): Twig_Lexer->lexExpression()
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php(115): Twig_Lexer->lexVar()
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(581): Twig_Lexer->tokenize('{{ header \n<!--...', 'default/templat...')
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->tokenize('{{ header \n<!--...', 'default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header \n<!--...', 'default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('defa in /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php on line 284
+[20-Dec-2017 13:44:24 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/previewmahac/public_html/openc/catalog/model/extension/shipping/weight.php on line 44
+[20-Dec-2017 14:22:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getAddresses() on null in /home/previewmahac/public_html/openc/catalog/controller/account/account.php:97
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerAccountAccount->index()
+#1 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#2 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/previewmahac/public_html/openc/system/framework.php(168): Router->dispatch(Object(Action), Object(Action))
+#6 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#7 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#8 {main}
+  thrown in /home/previewmahac/public_html/openc/catalog/controller/account/account.php on line 97
+[20-Dec-2017 15:23:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Controlleraccountregister' not found in /home/previewmahac/public_html/openc/system/engine/action.php:71
+Stack trace:
+#0 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#1 /home/previewmahac/public_html/openc/system/engine/action.php(79): ControllerStartupRouter->index()
+#2 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#3 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#4 /home/previewmahac/public_html/openc/system/framework.php(168): Router->dispatch(Object(Action), Object(Action))
+#5 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#6 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#7 {main}
+  thrown in /home/previewmahac/public_html/openc/system/engine/action.php on line 71
+[20-Dec-2017 15:24:24 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "default/template/account/register2.twig" (looked into: /home/previewmahac/public_html/openc/catalog/view/theme). in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('default/templat...')
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('default/templat...')
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('default/templat...', NULL)
+#3 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+#5 /home/previewmahac/public_html/open in /home/previewmahac/public_html/openc/system/library/template/Twig/Loader/Filesystem.php on line 215
+[21-Dec-2017 19:35:13 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unknown "endfor" tag in "default/template/product/search.twig" at line 163. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:178
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}\n<!...', 'default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template/twig.php(33): Twig_Environment->loadTemplate('default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+#6 / in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 178
+[23-Dec-2017 19:19:44 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unknown "staticCall" function in "default/template/product/category.twig" at line 33. in /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php:574
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(351): Twig_ExpressionParser->getFunctionNodeClass('staticCall', 33)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(144): Twig_ExpressionParser->getFunctionNode('staticCall', 33)
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(84): Twig_ExpressionParser->parsePrimaryExpression()
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(41): Twig_ExpressionParser->getPrimary()
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(144): Twig_ExpressionParser->parseExpression()
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40 in /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php on line 574
+[23-Dec-2017 19:20:13 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unknown "staticCall" function in "default/template/product/category.twig" at line 33. in /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php:574
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(351): Twig_ExpressionParser->getFunctionNodeClass('staticCall', 33)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(144): Twig_ExpressionParser->getFunctionNode('staticCall', 33)
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(84): Twig_ExpressionParser->parsePrimaryExpression()
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php(41): Twig_ExpressionParser->getPrimary()
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(144): Twig_ExpressionParser->parseExpression()
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40 in /home/previewmahac/public_html/openc/system/library/template/Twig/ExpressionParser.php on line 574
+[23-Dec-2017 23:46:20 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unknown "endif" tag in "default/template/product/category.twig" at line 93. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:178
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}\n\n\n...', 'default/templat...')
+#4 /home/previewmahac/storage/modification/system/library/template/twig.php(42): Twig_Environment->loadTemplate('default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0') in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 178
+[24-Dec-2017 11:45:20 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: A block must start with a tag name in "default/template/extension/module/filter.twig" at line 8. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:154
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home/previewmahac/public_ht in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 154
+[24-Dec-2017 16:02:50 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php on line 54
+[24-Dec-2017 16:23:06 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/previewmahac/public_html/openc/catalog/controller/extension/module/advancedsearch.php on line 100
+[24-Dec-2017 16:32:19 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:33:40 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:34:54 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:34:56 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:35:01 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:37:08 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '68' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:39:43 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '[' in /home/previewmahac/public_html/openc/catalog/controller/product/category.php on line 20
+[24-Dec-2017 16:45:46 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:52:49 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 16:53:10 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '80' AND pf.filter_id IN () in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(512): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/mo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[24-Dec-2017 17:03:16 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unknown "endif" tag in "default/template/product/product.twig" at line 181. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:178
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('{{ header }}\n<!...', 'default/templat...')
+#4 /home/previewmahac/storage/modification/system/library/template/twig.php(42): Twig_Environment->loadTemplate('default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+# in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 178
+[24-Dec-2017 20:13:39 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php on line 92
+[24-Dec-2017 21:46:11 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/previewmahac/public_html/openc/catalog/controller/product/models.php on line 9
+[24-Dec-2017 21:47:19 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/previewmahac/public_html/openc/catalog/controller/product/models.php on line 10
+[25-Dec-2017 00:28:28 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected token "operator" of value "=" ("end of statement block" expected) in "default/template/extension/module/advancedsearch.twig" at line 17. in /home/previewmahac/public_html/openc/system/library/template/Twig/TokenStream.php:87
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/If.php(33): Twig_TokenStream->expect(3)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_If->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Objec in /home/previewmahac/public_html/openc/system/library/template/Twig/TokenStream.php on line 87
+[25-Dec-2017 00:35:53 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/previewmahac/public_html/openc/catalog/controller/product/models.php on line 39
+[25-Dec-2017 01:05:45 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unknown "endif" tag in "default/template/extension/module/advancedsearch.twig" at line 15. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:178
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(100): Twig_Parser->subparse(NULL, false)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->parse(Object(Twig_TokenStream))
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('<style>\n.advanc...', 'default/templat...')
+#4 /home/previewmahac/storage/modification/system/library/template/twig.php(42): Twig_Environment->loadTemplate('default/templat...')
+#5 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/temp in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 178
+[25-Dec-2017 10:16:55 UTC] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/previewmahac/public_html/openc/catalog/controller/extension/module/advancedsearch.php on line 23
+[25-Dec-2017 10:17:17 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/advancedsearch.php on line 24
+[25-Dec-2017 10:40:02 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/advancedsearch.php on line 24
+[25-Dec-2017 10:40:12 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/previewmahac/public_html/openc/catalog/controller/extension/module/advancedsearch.php on line 97
+[25-Dec-2017 10:48:45 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/previewmahac/public_html/openc/catalog/controller/extension/module/advancedsearch.php on line 97
+[26-Dec-2017 14:51:19 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/previewmahac/public_html/openc/catalog/controller/product/product.php on line 239
+[01-Jan-2018 11:45:47 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/previewmahac/public_html/openc/catalog/controller/product/models.php on line 34
+[01-Jan-2018 11:45:58 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/previewmahac/public_html/openc/catalog/controller/product/models.php on line 34
+[06-Jan-2018 21:07:05 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unclosed """ in "default/template/extension/module/filter.twig" at line 23. in /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php:132
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(581): Twig_Lexer->tokenize('<div class="pan...', 'default/templat...')
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(671): Twig_Environment->tokenize('<div class="pan...', 'default/templat...')
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/Environment.php(396): Twig_Environment->compileSource('<div class="pan...', 'default/templat...')
+#3 /home/previewmahac/storage/modification/system/library/template/twig.php(42): Twig_Environment->loadTemplate('default/templat...')
+#4 /home/previewmahac/public_html/openc/system/library/template.php(51): Template\Twig->render('default/templat...', '0')
+#5 /home/previewmahac/storage/modification/system/engine/loader.php(125): Template- in /home/previewmahac/public_html/openc/system/library/template/Twig/Lexer.php on line 132
+[09-Jan-2018 00:24:43 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected "endfor" tag (expecting closing tag for the "if" tag defined near line 6) in "default/template/extension/module/filter.twig" at line 15. in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php:172
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/If.php(34): Twig_Parser->subparse(Array)
+#1 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_If->parse(Object(Twig_Token))
+#2 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#3 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Object(Twig_Token))
+#4 /home/previewmahac/public_html/openc/system/library/template/Twig/TokenParser/For.php(40): Twig_Parser->subparse(Array)
+#5 /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php(187): Twig_TokenParser_For->parse(Ob in /home/previewmahac/public_html/openc/system/library/template/Twig/Parser.php on line 172
+[09-Jan-2018 00:37:09 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php on line 74
+[09-Jan-2018 00:46:19 UTC] PHP Fatal error:  Cannot declare class ModelCatalogProduct, because the name is already in use in /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php on line 555
+[09-Jan-2018 00:46:52 UTC] PHP Fatal error:  Cannot declare class ModelCatalogProduct, because the name is already in use in /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php on line 555
+[09-Jan-2018 00:48:05 UTC] PHP Fatal error:  Cannot declare class ModelCatalogProduct, because the name is already in use in /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php on line 552
+[09-Jan-2018 00:58:43 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/previewmahac/public_html/openc/catalog/model/catalog/product.php on line 554
+[09-Jan-2018 01:08:34 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/previewmahac/public_html/openc/catalog/model/catalog/product.php on line 555
+[09-Jan-2018 01:11:36 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''18,17'' at line 1<br />Error No: 1064<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' AND pf.filter_id in '18,17' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(528): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 01:13:48 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/previewmahac/public_html/openc/catalog/model/catalog/product.php on line 555
+[09-Jan-2018 01:14:43 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/previewmahac/public_html/openc/catalog/model/catalog/product.php on line 555
+[09-Jan-2018 01:22:25 UTC] PHP Fatal error:  Uncaught Exception: Error: Unknown column 'p.product_id' in 'field list'<br />Error No: 1054<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '74' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(528): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array)
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/ex in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 01:22:47 UTC] PHP Fatal error:  Uncaught Exception: Error: Unknown column 'p.product_id' in 'field list'<br />Error No: 1054<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_category_path cp LEFT JOIN oc_product_to_category p2c ON (cp.category_id = p2c.category_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND cp.path_id = '75' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(528): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array)
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 04:03:47 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/previewmahac/public_html/openc/catalog/model/catalog/product.php on line 469
+[09-Jan-2018 04:03:59 UTC] PHP Fatal error:  Uncaught Exception: Error: Operand should contain 1 column(s)<br />Error No: 1241<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '99' AND pf.filter_id = (1255,1106) AND pf.filter_id = '1106' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 04:04:47 UTC] PHP Fatal error:  Uncaught Exception: Error: Operand should contain 1 column(s)<br />Error No: 1241<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '99' AND pf.filter_id = (1255,1106) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array)
+#3 /home/previewma in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 05:38:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/previewmahac/public_html/openc/catalog/controller/product/category.php on line 85
+[09-Jan-2018 05:42:59 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY p.product_id ORDER BY p.sort_order ASC, LCASE(pd.name) ASC LIMIT 0,15' at line 1<br />Error No: 1064<br />SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMI in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '75' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '75' AND pf.filter_id IN (1168) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(526): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProdu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />REPLACE INTO `oc_session` SET session_id = 'e3c7a1fc882c8c20aa3753d52c', `data` = '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"OYKMl6OQTJ366HYXRle851iHaynGAUpb\",\"vouchers\":[],\"compare\":[],\"install\":\"dkwJ6V0HSb\",\"customer_id\":\"7\",\"shipping_address\":{\"address_id\":\"3\",\"firstname\":\"mahmod\",\"lastname\":\"slah\",\"company\":\"mahacode\",\"address_1\":\"asd\",\"address_2\":\"asd\",\"postcode\":\"12356\",\"city\":\"asd\",\"zone_id\":\"3513\",\"zone\":\"Aberdeen\",\"zone_code\":\"ABN\",\"country_id\":\"222\",\"country\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"iso_code_3\":\"GBR\",\"address_format\":\"\",\"custom_field\":null}}', expire = '2018-01-09 06:43:43' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->qu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />REPLACE INTO `oc_session` SET session_id = 'e3c7a1fc882c8c20aa3753d52c', `data` = '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"OYKMl6OQTJ366HYXRle851iHaynGAUpb\",\"vouchers\":[],\"compare\":[],\"install\":\"dkwJ6V0HSb\",\"customer_id\":\"7\",\"shipping_address\":{\"address_id\":\"3\",\"firstname\":\"mahmod\",\"lastname\":\"slah\",\"company\":\"mahacode\",\"address_1\":\"asd\",\"address_2\":\"asd\",\"postcode\":\"12356\",\"city\":\"asd\",\"zone_id\":\"3513\",\"zone\":\"Aberdeen\",\"zone_code\":\"ABN\",\"country_id\":\"222\",\"country\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"iso_code_3\":\"GBR\",\"address_format\":\"\",\"custom_field\":null}}', expire = '2018-01-09 06:43:43' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->qu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '68' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />REPLACE INTO `oc_session` SET session_id = 'e3c7a1fc882c8c20aa3753d52c', `data` = '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"OYKMl6OQTJ366HYXRle851iHaynGAUpb\",\"vouchers\":[],\"compare\":[],\"install\":\"dkwJ6V0HSb\",\"customer_id\":\"7\",\"shipping_address\":{\"address_id\":\"3\",\"firstname\":\"mahmod\",\"lastname\":\"slah\",\"company\":\"mahacode\",\"address_1\":\"asd\",\"address_2\":\"asd\",\"postcode\":\"12356\",\"city\":\"asd\",\"zone_id\":\"3513\",\"zone\":\"Aberdeen\",\"zone_code\":\"ABN\",\"country_id\":\"222\",\"country\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"iso_code_3\":\"GBR\",\"address_format\":\"\",\"custom_field\":null}}', expire = '2018-01-09 06:43:43' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->qu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '68' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '68' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />REPLACE INTO `oc_session` SET session_id = 'e3c7a1fc882c8c20aa3753d52c', `data` = '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"OYKMl6OQTJ366HYXRle851iHaynGAUpb\",\"vouchers\":[],\"compare\":[],\"install\":\"dkwJ6V0HSb\",\"customer_id\":\"7\",\"shipping_address\":{\"address_id\":\"3\",\"firstname\":\"mahmod\",\"lastname\":\"slah\",\"company\":\"mahacode\",\"address_1\":\"asd\",\"address_2\":\"asd\",\"postcode\":\"12356\",\"city\":\"asd\",\"zone_id\":\"3513\",\"zone\":\"Aberdeen\",\"zone_code\":\"ABN\",\"country_id\":\"222\",\"country\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"iso_code_3\":\"GBR\",\"address_format\":\"\",\"custom_field\":null}}', expire = '2018-01-09 06:43:43' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->qu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '68' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />REPLACE INTO `oc_session` SET session_id = 'e3c7a1fc882c8c20aa3753d52c', `data` = '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"OYKMl6OQTJ366HYXRle851iHaynGAUpb\",\"vouchers\":[],\"compare\":[],\"install\":\"dkwJ6V0HSb\",\"customer_id\":\"7\",\"shipping_address\":{\"address_id\":\"3\",\"firstname\":\"mahmod\",\"lastname\":\"slah\",\"company\":\"mahacode\",\"address_1\":\"asd\",\"address_2\":\"asd\",\"postcode\":\"12356\",\"city\":\"asd\",\"zone_id\":\"3513\",\"zone\":\"Aberdeen\",\"zone_code\":\"ABN\",\"country_id\":\"222\",\"country\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"iso_code_3\":\"GBR\",\"address_format\":\"\",\"custom_field\":null}}', expire = '2018-01-09 06:43:43' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->qu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />REPLACE INTO `oc_session` SET session_id = 'e3c7a1fc882c8c20aa3753d52c', `data` = '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"OYKMl6OQTJ366HYXRle851iHaynGAUpb\",\"vouchers\":[],\"compare\":[],\"install\":\"dkwJ6V0HSb\",\"customer_id\":\"7\",\"shipping_address\":{\"address_id\":\"3\",\"firstname\":\"mahmod\",\"lastname\":\"slah\",\"company\":\"mahacode\",\"address_1\":\"asd\",\"address_2\":\"asd\",\"postcode\":\"12356\",\"city\":\"asd\",\"zone_id\":\"3513\",\"zone\":\"Aberdeen\",\"zone_code\":\"ABN\",\"country_id\":\"222\",\"country\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"iso_code_3\":\"GBR\",\"address_format\":\"\",\"custom_field\":null}}', expire = '2018-01-09 06:43:43' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->qu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '68' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(532): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTotalProducts(Array) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:19:43 UTC] PHP Fatal error:  Uncaught Exception: Error: User 'previewm_msherif' has exceeded the 'max_questions' resource (current value: 1)<br />Error No: 1226<br />REPLACE INTO `oc_session` SET session_id = 'e3c7a1fc882c8c20aa3753d52c', `data` = '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"OYKMl6OQTJ366HYXRle851iHaynGAUpb\",\"vouchers\":[],\"compare\":[],\"install\":\"dkwJ6V0HSb\",\"customer_id\":\"7\",\"shipping_address\":{\"address_id\":\"3\",\"firstname\":\"mahmod\",\"lastname\":\"slah\",\"company\":\"mahacode\",\"address_1\":\"asd\",\"address_2\":\"asd\",\"postcode\":\"12356\",\"city\":\"asd\",\"zone_id\":\"3513\",\"zone\":\"Aberdeen\",\"zone_code\":\"ABN\",\"country_id\":\"222\",\"country\":\"United Kingdom\",\"iso_code_2\":\"GB\",\"iso_code_3\":\"GBR\",\"address_format\":\"\",\"custom_field\":null}}', expire = '2018-01-09 06:43:43' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->qu in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[09-Jan-2018 06:25:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Document::setImage() in /home/previewmahac/public_html/openc/catalog/controller/product/category.php:96
+Stack trace:
+#0 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerProductCategory->index()
+#1 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#2 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/previewmahac/public_html/openc/system/framework.php(168): Router->dispatch(Object(Action), Object(Action))
+#6 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#7 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#8 {main}
+  thrown in /home/previewmahac/public_html/openc/catalog/controller/product/category.php on line 96
+[09-Jan-2018 06:28:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Document::setImage() in /home/previewmahac/public_html/openc/catalog/controller/product/category.php:96
+Stack trace:
+#0 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerProductCategory->index()
+#1 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#2 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/previewmahac/public_html/openc/system/framework.php(168): Router->dispatch(Object(Action), Object(Action))
+#6 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#7 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#8 {main}
+  thrown in /home/previewmahac/public_html/openc/catalog/controller/product/category.php on line 96
+[11-Jan-2018 14:43:15 UTC] PHP Fatal error:  Uncaught Exception: Error: Not unique table/alias: 'p'<br />Error No: 1066<br />SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_filter in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[11-Jan-2018 14:44:51 UTC] PHP Fatal error:  Uncaught Exception: Error: Not unique table/alias: 'p'<br />Error No: 1066<br />SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_filter in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[11-Jan-2018 14:47:14 UTC] PHP Fatal error:  Uncaught Exception: Error: Not unique table/alias: 'p'<br />Error No: 1066<br />SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_filter in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[11-Jan-2018 14:47:17 UTC] PHP Fatal error:  Uncaught Exception: Error: Not unique table/alias: 'p'<br />Error No: 1066<br />SELECT p.product_id, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_filter in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 07:16:16 UTC] PHP Fatal error:  Uncaught Exception: Error: Unknown column 'pf2.filter_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '99' AND pf.filter_id IN (1200) AND pf2.filter_id = '1200' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(506): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 07:17:39 UTC] PHP Fatal error:  Uncaught Exception: Error: Unknown column 'pf2.filter_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '99' AND pf.filter_id IN (1200) AND pf2.filter_id = '1200' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(506): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTo in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 08:42:20 UTC] PHP Fatal error:  Uncaught Exception: Error: Unknown column 'pf.parent_id' in 'where clause'<br />Error No: 1054<br />SELECT COUNT(DISTINCT p.product_id) AS total FROM oc_product_to_category p2c LEFT JOIN oc_product_filter pf ON (p2c.product_id = pf.product_id) LEFT JOIN oc_product p ON (pf.product_id = p.product_id) LEFT JOIN oc_product_description pd ON (p.product_id = pd.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '1' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND p2c.category_id = '99' AND pf.filter_id IN (2474) AND pf.parent_id = '1943' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT COUNT(DI...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(615): DB->query('SELECT COUNT(DI...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getTota in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:14:04 UTC] PHP Fatal error:  Uncaught Exception: Error: Table 'previewm_openc.oc_product_Variants' doesn't exist<br />Error No: 1146<br />SELECT * FROM oc_product_Variants pr LEFT JOIN oc_product p ON (pr.Variants_id = p.product_id) LEFT JOIN oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pr.product_id = '563' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM o...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/product.php(408): DB->query('SELECT * FROM o...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->getProductVariants('563')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/product/product.php(428): Proxy->__call('getProductVaria...', Array in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:25:42 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php on line 99
+[13-Jan-2018 09:25:45 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php on line 99
+[13-Jan-2018 09:54:20 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '01' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />01' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('01' ORDER BY f....')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(66): DB->query('01' ORDER BY f....')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(80): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerE in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:54:45 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '01' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />01' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('01' ORDER BY f....')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(66): DB->query('01' ORDER BY f....')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(81): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerE in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:55:29 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '01' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />01' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('01' ORDER BY f....')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(67): DB->query('01' ORDER BY f....')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(81): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerE in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:56:56 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '171' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />171' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('171' ORDER BY f...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(67): DB->query('171' ORDER BY f...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('17')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(81): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): Control in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:57:21 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '171' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />171' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('171' ORDER BY f...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(67): DB->query('171' ORDER BY f...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('17')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(81): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): Control in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:57:23 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '171' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />171' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('171' ORDER BY f...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(67): DB->query('171' ORDER BY f...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('17')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(81): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): Control in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 09:57:46 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php on line 67
+[13-Jan-2018 09:58:07 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '171' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />171' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('171' ORDER BY f...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(68): DB->query('171' ORDER BY f...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('17')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(81): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): Control in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[13-Jan-2018 10:00:59 UTC] PHP Fatal error:  Uncaught Exception: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '171' ORDER BY f.sort_order, LCASE(fd.name)' at line 1<br />Error No: 1064<br />171' ORDER BY f.sort_order, LCASE(fd.name) in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('171' ORDER BY f...')
+#1 /home/previewmahac/public_html/openc/catalog/model/catalog/filter.php(67): DB->query('171' ORDER BY f...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogFilter->getManufactererFilters('17')
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php(81): Proxy->__call('getManufacterer...', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): Control in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[14-Jan-2018 08:04:08 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/maincat.php on line 45
+[14-Jan-2018 11:36:01 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/previewmahac/public_html/openc/catalog/controller/product/product.php on line 431
+[14-Jan-2018 11:36:15 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/previewmahac/public_html/openc/catalog/controller/product/product.php on line 433
+[16-Jan-2018 11:41:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Controllerproductmanufacturers' not found in /home/previewmahac/storage/modification/system/engine/action.php:71
+Stack trace:
+#0 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#1 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#2 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#3 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#4 /home/previewmahac/public_html/openc/system/framework.php(168): Router->dispatch(Object(Action), Object(Action))
+#5 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#6 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#7 {main}
+  thrown in /home/previewmahac/storage/modification/system/engine/action.php on line 71
+[16-Jan-2018 11:41:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Controllerproductmanufacturers' not found in /home/previewmahac/storage/modification/system/engine/action.php:71
+Stack trace:
+#0 /home/previewmahac/public_html/openc/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#1 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#2 /home/previewmahac/public_html/openc/system/engine/router.php(67): Action->execute(Object(Registry))
+#3 /home/previewmahac/public_html/openc/system/engine/router.php(56): Router->execute(Object(Action))
+#4 /home/previewmahac/public_html/openc/system/framework.php(168): Router->dispatch(Object(Action), Object(Action))
+#5 /home/previewmahac/public_html/openc/system/startup.php(104): require_once('/home/previewma...')
+#6 /home/previewmahac/public_html/openc/index.php(19): start('catalog')
+#7 {main}
+  thrown in /home/previewmahac/storage/modification/system/engine/action.php on line 71
+[17-Jan-2018 10:18:38 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home/previewmahac/public_html/openc/catalog/controller/extension/module/filter.php on line 94
+[17-Jan-2018 10:39:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getAllFilters() on null in /home/previewmahac/public_html/openc/catalog/controller/extension/module/maincat.php:14
+Stack trace:
+#0 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerExtensionModuleMaincat->index(Array)
+#1 /home/previewmahac/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#2 /home/previewmahac/public_html/openc/catalog/controller/common/content_top.php(52): Loader->controller('extension/modul...')
+#3 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerCommonContentTop->index(Array)
+#4 /home/previewmahac/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home/previewmahac/public_html/openc/catalog/controller/common/home.php(14): Loader->controller('common/content_...')
+#6 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerCommonHome->index()
+#7 /home/previewmahac/public_html/openc/ in /home/previewmahac/public_html/openc/catalog/controller/extension/module/maincat.php on line 14

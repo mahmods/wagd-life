@@ -1,0 +1,94 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+
+
+<div id="information-contact" class="container">
+  <!-- Page Content -->
+  <div class="page-content container">
+      <h2 class="area-title">{{heading_title}}</h2>
+      <!-- Contact Info -->
+      <div class="row contact-info">
+          <!-- contact block -->
+          <div class="col-s-12 col-m-6 col-l-3">
+              <i><img src="catalog/view/theme/default/assets/img/icon-5.png" alt=""></i>
+              <h3>{{text_email}}</h3>
+              <p>{{ email }}</p>
+          </div>
+          <!-- // contact block -->
+          <!-- contact block -->
+          <div class="col-s-12 col-m-6 col-l-3">
+              <i><img src="catalog/view/theme/default/assets/img/icon-6.png" alt=""></i>
+              <h3>{{text_support}}</h3>
+              <p>{{ email }} <br> {{ telephone }}</p>
+          </div>
+          <!-- // contact block -->
+          <!-- contact block -->
+          <div class="col-s-12 col-m-6 col-l-3">
+              <i><img src="catalog/view/theme/default/assets/img/icon-7.png" alt=""></i>
+              <h3>{{text_telephone}}</h3>
+              <p>{{ telephone }}</p>
+          </div>
+          <!-- // contact block -->
+          <!-- contact block -->
+          <div class="col-s-12 col-m-6 col-l-3">
+              <i><img src="catalog/view/theme/default/assets/img/icon-8.png" alt=""></i>
+              <h3>{{text_address}}</h3>
+              <p>{{ address }}</p>
+          </div>
+          <!-- // contact block -->
+      </div>
+      <!-- // Contact Info -->
+      
+      <h2 class="area-title">{{text_sendusmessage}}</h2>
+      <div class="row">
+          <div class="col-s-12 col-l-8">
+              <form class="form-ui row form-horizontal" action="{{ action }}" method="post" enctype="multipart/form-data">
+                  <div class="col-s-12 col-m-6"> 
+                      <label>{{entry_name}}</label>
+                      {% if error_name %}
+                      <div class="text-danger">{{ error_name }}</div>
+                      {% endif %}
+                      <input type="text" name="name" value="{{ name }}" placeholder="{{entry_name}}">
+                  </div>
+                  <div class="col-s-12 col-m-6"> 
+                      <label>{{entry_email}}</label>
+                      {% if error_email %}
+                      <div class="text-danger">{{ error_email }}</div>
+                      {% endif %}
+                      <input type="text" name="email" value="{{ email2 }}" placeholder="{{entry_email}}">
+                  </div>
+                  <div class="col-s-12"> 
+                      <label>{{entry_enquiry}}</label>
+                      {% if error_enquiry %}
+                      <div class="text-danger">{{ error_enquiry }}</div>
+                      {% endif %}
+                      <textarea placeholder="{{entry_enquiry}}" name="enquiry">{{ enquiry }}</textarea>
+                      <input type="submit" value="{{text_send}}" class="btn primary">
+                  </div>
+              </form>
+          </div>
+          <div class="col-s-12 col-l-4">
+              {% if geocode %}
+<!--
+              <a href="https://maps.google.com/maps?q={{ geocode|url_encode }}&hl={{ geocode_hl }}&t=m&z=15" target="_blank" class="btn btn-info"><i class="fa fa-map-marker"></i> {{ button_map }}</a>
+-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7291207.031405379!2d35.373894556485894!3d26.834872940180475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z2YXYtdix!5e0!3m2!1sar!2seg!4v1514027525164" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              {% endif %}
+          </div>
+      </div>
+  </div>
+  <!-- // Page Content -->
+</div>
+
+{{ footer }}

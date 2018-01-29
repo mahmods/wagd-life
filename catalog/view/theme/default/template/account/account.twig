@@ -1,0 +1,61 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+<!-- Page Content -->
+<div class="page-content container">
+    <div class="row row-reverse">
+        <!-- Content Side -->
+        <div class="col-s-12 col-l-9">
+			            <div class="main-box">
+                <div class="content-box">
+					<h3 class="title">{{text_info}} <a href="{{edit}}" class="edit-btn">{{text_edit2}}</a></h3>
+                    <div class="row">
+                        <div class="col-s-12 col-m-6 col-l-4">
+                            <ul>
+								<li><span>{{text_name}}</span> {{firstname}} {{lastname}}</li>
+								<li><span>{{text_email}}</span> {{email}}</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-s-12 col-m-6 col-l-4">
+                            <ul>
+								<li><span>{{text_phone}}</span>{{telephone}}</li>
+                                <li><span>{{text_address2}}</span>
+                                    {% if account_custom_field[custom_fields[0].custom_field_id] %}
+                                        {{ account_custom_field[custom_fields[0].custom_field_id] }}
+                                    {% else %}
+                                        {{ custom_fields[0].value }}
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-s-12 col-m-6 col-l-4">
+                            <ul>
+{%for address in addresses%}
+                                <li><span>{{text_address2}} {{loop.index}}</span> {{address.address_1}}, {{address.city}}, {{address.zone}}, {{address.postcode}}, {{address.country}}</li>
+{% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+        </div>
+        <!-- // Content Side -->
+        <!-- Widegets Side -->
+{{ column_left }}
+</div>
+</div>
+<!-- // Page Content -->
+
+{{ footer }}v

@@ -1,0 +1,71 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-s-12 col-m-6 col-l-5">
+                <h3>{{text_aboutus}}</h3>
+                <p>{{ abouttext }}</p>
+                <img src="image/payments.png" alt="">
+                <span class="ti-email">{{ email }}</span>
+                <span class="ti-phone">{{ telephone }}</span>
+            </div>
+            <div class="col-s-12 col-m-6 col-l-7">
+                <h3>{{text_sitemap}}</h3>
+                <ul>
+                    <li><a href="{{ special }}">{{ text_special }}</a></li>
+                    <li><a href="{{ account }}">{{ text_account }}</a></li>
+                    <li><a href="{{ edit }}">{{ text_edit }}</a></li>
+                    <li><a href="{{ password }}">{{ text_password }}</a></li>
+                    <li><a href="{{ address }}">{{ text_address }}</a></li>
+                    <li><a href="{{ history }}">{{ text_history }}</a></li>
+                    <li><a href="{{ download }}">{{ text_download }}</a></li>
+                    <li><a href="{{ history }}">{{ text_cart }}</a></li>
+                    <li><a href="{{ checkout }}">{{ text_checkout }}</a></li>
+                    <li><a href="{{ search }}">{{ text_search }}</a></li>
+                    {% for information in informations %}
+                    <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+                    {% endfor %}
+                    <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Copyrights -->
+<div class="copyrights">
+    <div class="container">
+        All contents © copyright 2011-2017 Cables and Sensors,
+        <div class="mahacode-copyrights">
+            <a href="http://mahacode.com/" target="_blank" class="logo"><img src="image/mahacode-white.png" alt=""></a>
+            <div class="mc-tooltip">
+                <h3>تصميم وتطوير شركة مها كود</h3>
+                <h4 class="ti-email">info@mahacode.com</h4>
+                <h4 class="ti-phone">+02686 4621312 14849 8789</h4>
+                <div class="btns-icons">
+                    <a href="http://mahacode.com/" target="_blank" class="ti-home-io"></a>
+                    <a href="https://www.linkedin.com/company/10801558" target="_blank" class="ti-linkedin"></a>
+                    <a href="https://api.whatsapp.com/send?phone=00201093678012" target="_blank" class="ti-whatsapp-line"></a>
+                    <a href="https://www.behance.net/mahacode" target="_blank" class="ti-behance"></a>
+                    <a href="https://www.instagram.com/maha.code/" target="_blank" class="ti-instagram"></a>
+                    <a href="http://www.twitter.com/mahacode" target="_blank" class="ti-twitter"></a>
+                    <a href="https://www.facebook.com/MahaCode/" class="ti-facebook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Required JS Files -->
+<script src="catalog/view/theme/default/assets/js/tornado.js"></script>
+{% if lang == "ar" %}
+    <script src="catalog/view/theme/default/assets/js/script-rtl.min.js"></script>
+{% else %}
+    <script src="catalog/view/theme/default/assets/js/script.min.js"></script>
+{% endif %}
+{% for script in scripts %}
+    <script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+</body>
+</html>

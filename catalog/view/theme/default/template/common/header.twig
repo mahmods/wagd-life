@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="{{ direction }}" lang="{{ lang }}">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ title }}</title>
+<!--<base href="{{ base }}" />-->
+{% if description %}
+<meta name="description" content="{{ description }}" />
+{% endif %}
+{% if keywords %}
+<meta name="keywords" content="{{ keywords }}" />
+{% endif %}
+<!--<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet" media="screen" />
+
+
+<!-- Required CSS Files -->
+{% if lang == "ar" %}
+<link href="catalog/view/theme/default/assets/css/tornado-rtl.css" rel="stylesheet">
+<link href="catalog/view/theme/default/assets/theme-rtl.css" rel="stylesheet">
+{% else %}
+<link href="catalog/view/theme/default/assets/css/tornado.css" rel="stylesheet">
+<link href="catalog/view/theme/default/assets/theme.css" rel="stylesheet">
+{% endif %}
+<link href="catalog/view/theme/default/assets/css/animations.css" rel="stylesheet">
+{% for style in styles %}
+<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
+{% endfor %}
+{% for link in links %}
+<link href="{{ link.href }}" rel="{{ link.rel }}" />
+{% endfor %}
+{% for analytic in analytics %}
+{{ analytic }}
+{% endfor %}
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+{% for script in scripts %}
+    <script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+</head>
+<body>
+  
+<div class="tornado-loader loading3"> <div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div> </div>
+        
+        <!-- top navigation -->
+        <div class="top-nav">
+            <div class="container">
+                <span class="ti-email">{{ email }}</span>
+                <span class="ti-ring-volume">{{ telephone }}</span>
+                
+                <div class="btns">
+                        {% if logged %}
+                        <a href="{{ account }}">{{ text_account }}</a>
+                        <a href="{{ order }}">{{ text_order }}</a>
+                        <a href="{{ transaction }}">{{ text_transaction }}</a>
+                        <a href="{{ download }}">{{ text_download }}</a>
+                        <a href="{{ logout }}">{{ text_logout }}</a>
+                        {% else %}
+                        <a href="{{ register }}">{{ text_register }}</a>
+                        <a href="{{ login }}">{{ text_login }}</a>
+                        {% endif %}
+					
+					{{language}}
+                </div>
+            </div>
+        </div>
+        <!-- // top navigation -->
+        
+        <!-- header -->
+        <header class="main-header">
+            <div class="container">
+                <a href="{{ home }}" class="logo"><img src="{{logo}}" alt=""></a>
+                <div class="navigation-menu">
+                    <ul>
+                        <li><a href="{{ home }}">{{ text_home }}</a></li>
+                        <li><a href="{{ about }}">{{ text_aboutus }}</a></li>
+                        <li><a href="javascript:void(0)">{{ text_categories }}</a>
+                        <ul>
+                        {% for category in categories %}
+                        {% if category.children %}
+                        <li><a href="{{ category.href }}">{{ category.name }}</a>
+                          {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+                          <ul>
+                          	{% for child in children %}
+                			<li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                			{% endfor %}
+                          </ul>
+                          {% endfor %}
+                      	</li>
+                      {% else %}
+        				<li><a href="{{ category.href }}">{{ category.name }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                        </ul>
+                        <li><a href="{{ contact }}">{{ text_contactus }}</a></li>
+                    </ul>
+                </div>
+                <div class="btns">
+                    <a href="{{ wishlist }}" class="wishlist" data-notfication="{{text_wishlist}}"><img src="catalog/view/theme/default/assets/img/like-2.svg" alt=""></a>
+                    
+                    <!-- Cart -->
+                    {{ cart }}
+                    
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+{{ menu }}

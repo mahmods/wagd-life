@@ -1,0 +1,21 @@
+<!-- Video Section -->
+<div class="video-section">
+    {% if heading_title %}
+        <h3>{{ heading_title }}</h3>
+    {% endif %}
+    <a href="#" class="video-control" data-modal="video-box"></a>
+</div>
+<!-- // Video Section -->
+<div class="modal-box tornado-ui" id="video-box">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="responsive-video"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.video-control').on('click', function() {
+        $('#video-box .responsive-video').append('{{video}}');
+    })
+</script>

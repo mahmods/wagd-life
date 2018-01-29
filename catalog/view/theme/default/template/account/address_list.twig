@@ -1,0 +1,48 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+
+
+<!-- Page Content -->
+<div class="page-content container">
+    <div class="row row-reverse">
+        <!-- Content Side -->
+        <div class="col-s-12 col-l-9">
+            {% if addresses %}
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover">
+                {% for result in addresses %}
+                <tr>
+                  <td class="text-left">{{ result.address }}</td>
+                  <td class="text-right"><a href="{{ result.update }}" class="btn info">{{ button_edit }}</a> &nbsp; <a href="{{ result.delete }}" class="btn danger">{{ button_delete }}</a></td>
+                </tr>
+                {% endfor %}
+              </table>
+            </div>
+            {% else %}
+            <p>{{ text_empty }}</p>
+            {% endif %}
+            <div class="buttons clearfix">
+              <div class="pull-left"><a href="{{ back }}" class="btn">{{ button_back }}</a></div>
+              <div class="pull-right"><a href="{{ add }}" class="btn primary">{{ button_new_address }}</a></div>
+            </div>  
+        </div>
+        <!-- // Content Side -->
+        
+        <!-- Widegets Side -->
+{{ column_left }}
+</div>
+</div>
+<!-- // Page Content -->
+
+{{ footer }}

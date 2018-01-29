@@ -1,0 +1,52 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+
+<!-- Page Content -->
+<div class="page-content container signinbg">
+    <div class="row row-zCenter">
+        <div class="col-s-12 col-l-6 main-box">
+            <div class="content-box">
+                <h3 class="title">{{ heading_title }}</h3>
+                {% if success %}
+                <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}</div>
+                {% endif %}
+                {% if error_warning %}
+                <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}</div>
+                {% endif %}
+                <form class="form-ui signin" action="{{ action }}" method="post" enctype="multipart/form-data">
+                  <label class="control-label" for="input-email">{{ entry_email }}</label>
+                  <input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control" />
+                  <label class="control-label" for="input-password">{{ entry_password }}</label>
+                  <input type="password" name="password" value="{{ password }}" placeholder="{{ entry_password }}" id="input-password" class="form-control" />
+                      <label class="checkbox">
+                        <input type="checkbox" name="checkbox">
+                        <span> {{text_remember}} </span>
+                        <a href="{{ forgotten }}" class="danger-text">{{text_forgotten}}</a>
+                    </label>
+                    <input type="submit" class="btn primary" value="{{text_login}}">
+                    {% if redirect %}
+                    <input type="hidden" name="redirect" value="{{ redirect }}" />
+                    {% endif %}
+                </form>
+            </div>                   
+        </div>
+        <div class="col-s-12 col-l-6 signup-message">
+            <h2>{{text_new}}</h2>
+            <a href="{{ register }}" class="btn primary">{{text_register}}</a>
+        </div>
+    </div>
+</div>
+<!-- // Page Content -->
+
+{{ footer }}

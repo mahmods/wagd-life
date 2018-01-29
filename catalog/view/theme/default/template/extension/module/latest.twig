@@ -1,0 +1,45 @@
+<!-- Lateast Products -->
+        <div class="lateast-products">
+            <div class="container">
+                <div class="section-title">
+					<h2>{{heading_title}}</h2>
+                </div>
+                
+                <div class="row">
+                  {% for product in products %}
+                    <!-- product block -->
+                    <div class="col-s-12 col-m-6 col-l-3 product-block">
+                        <div class="content-box">
+                            <a href="{{ product.href }}" class="image"><img src="{{ product.thumb }}" alt="">
+                             {% if not product.special %}
+                                {% else %}
+								<span class="discount">{{text_discount}}</span>
+                                {% endif %}
+                                </a>
+                            <div class="hvr">
+                                <a href="#" onclick="wishlist.add('{{ product.product_id }}');" class="ti-heart"></a>
+                                <a href="#" onclick="cart.add('{{ product.product_id }}');" class="ti-android-cart" data-modal="cart-added"></a>
+                            </div>
+                            <a href="{{ product.href }}"><h3>{{ product.name }}</h3></a>
+                           {% if not product.special %}
+                            <span class="price">{{ product.price }}</span>
+                                {% else %}
+                                <span class="price">{{ product.special }} <i>{{ product.price }}</i></span>
+                                {% endif %}
+                              {% if product.rating %}
+                              <div class="stars">{% for i in 1..5 %}
+                                {% if product.rating < i %} <span class="ti-star"></span> {% else %} <span class="ti-star active"></span> {% endif %}
+                                {% endfor %}</div>
+                              {% endif %}
+                        </div>
+                    </div>
+                    <!-- // product block -->
+                    {% endfor %}
+                </div>
+                
+				<a href="#" class="section-more">{{text_more}}</a>
+            </div>
+        </div>
+        <!-- // Lateast Products -->
+
+

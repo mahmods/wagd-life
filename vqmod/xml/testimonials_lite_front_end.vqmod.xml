@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>Testimonials Lite Front End</id>
+    <version>1.4.2</version>
+    <author>vanstudio.co.ua</author>
+	<file name="catalog/view/theme/*/template/common/footer.tpl">
+        <operation>
+            <search position="after"><![CDATA[<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>]]></search>
+            <add><![CDATA[
+				<li><a href="<?php echo $testimonial['href']; ?>"><?php echo $testimonial['title']; ?></a></li>
+            ]]></add>
+        </operation>
+    </file>
+	<file name="catalog/controller/common/footer.php">
+        <operation>
+            <search position="before"><![CDATA[$data['informations'] = array();]]></search>
+            <add><![CDATA[
+                $data['testimonial'] = array(
+                    'title' => 'Testimonials',
+                    'href'  => $this->url->link('testimonial/testimonial')
+                );
+            ]]></add>
+        </operation>
+    </file>
+</modification>

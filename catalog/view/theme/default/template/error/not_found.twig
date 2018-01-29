@@ -1,0 +1,23 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+<!-- Error 404 -->
+<div class="error404">
+	<div class="content-box">
+		<img src="catalog/view/theme/default/assets/img/error404.png" alt="">
+		<h3>{{text_error}}</h3>
+		<a href="{{continue}}" class="btn primary">{{button_continue}}</a>
+	</div>
+</div>
+<!-- // Error 404 -->
+{{ footer }}

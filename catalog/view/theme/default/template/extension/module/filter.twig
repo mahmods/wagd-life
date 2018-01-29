@@ -1,0 +1,94 @@
+<div class="wideget list-group form-ui">
+    <div class="wideget-title">{{ heading_title }}</div>
+    <div class="list-group">
+    <a class="list-group-item">{{ filter_groups[0].name }}</a>
+      <div class="list-group-item">
+        <select name="filter_manf[]">
+          <option name="filter_manf[]" value="" selected="selected">Select {{ filter_groups[0].name }}...</option>
+          {% for filter in filter_groups[0].filter %}
+              {% if '(0)' not in filter.name %}
+                  {% if filter.filter_id in filter_category or filter.name in filter_category %}
+                      <option name="filter_manf[]" value="{{filter.filter_id}}" selected="selected">{{ filter.name }}</option>
+                  {% else %}
+                      <option name="filter_manf[]" value="{{filter.filter_id}}">{{ filter.name }}</option>
+                  {% endif %}
+              {% endif %}
+          {% endfor %}
+      </select>
+      </div>
+      <a class="list-group-item">{{ filter_groups[1].name }}</a>
+      <div class="list-group-item">
+        <select name="filter_models[]">
+          <option name="filter_models[]" value="" selected="selected">Select {{ filter_groups[1].name }}...</option>
+      </select>
+      </div>
+    </div>
+    <div class="panel-footer text-right">
+      <button type="button" id="button-filter" class="btn btn-primary">{{ button_filter }}</button>
+    </div>
+  </div>
+  
+  <script type="text/javascript"><!--
+  $('select[name="filter_models[]"]').attr('disabled', 'disabled');
+  $( document ).ready(function() {
+      if ($('option[name="filter_manf[]"]:selected')) {
+        $.ajax({
+        type: "POST",
+        url: 'http://preview.mahacode.com/openc/index.php?route=product/models',
+        data: {manf_id: ($('option[name="filter_manf[]"]:selected').val()), category_id: {{category_id}}},
+        beforeSend: function() {
+            $('select[name="filter_models[]"]').attr('disabled', 'disabled');
+        },
+        success: function(data) {
+          console.log(data);
+          if (data[0].length > 0) {
+              $('select[name="filter_models[]"]').find('option').not(':first').remove();
+              data[0].forEach(element => {
+                  $('select[name="filter_models[]"]').append($('<option>', {
+                      value: element.filter_id,
+                      text: element.name
+                  }));
+              });
+              $('select[name="filter_models[]"]').removeAttr('disabled');
+          }
+      }
+    })
+      }    
+  });
+  $('select[name="filter_manf[]"]').on('change', function() {
+      console.log(this.value);
+    $.ajax({
+        type: "POST",
+        url: 'http://preview.mahacode.com/openc/index.php?route=product/models',
+        data: {manf_id: (this.value), category_id: {{category_id}}},
+        beforeSend: function() {
+            $('select[name="filter_models[]"]').attr('disabled', 'disabled');
+        },
+        success: function(data) {
+          console.log(data);
+          if (data[0].length > 0) {
+              $('select[name="filter_models[]"]').find('option').not(':first').remove();
+              data[0].forEach(element => {
+                  $('select[name="filter_models[]"]').append($("<option name='filter_models[]'></option>")
+                    .attr("value",element.filter_id)
+                    .text(element.name));
+              });
+              $('select[name="filter_models[]"]').removeAttr('disabled');
+          }
+      }
+    })
+  })
+  $('#button-filter').on('click', function() {
+      filter = [];
+  
+      $('select[name="filter_models[]"] option:selected').each(function(element) {
+          filter.push(this.value);
+      });
+          var filter_manf = $('option[name^=\'filter_manf\']:selected').val();
+      t = '{{ action }}' + '&filter_manf=' + filter_manf;
+      if(filter.length > 0) {
+          t = t + '&filter=' + filter.join(',')
+      }
+      location = t;
+  });
+  //--></script>

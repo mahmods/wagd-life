@@ -1,0 +1,70 @@
+{{ header }}
+<!-- Page Head -->
+<div class="page-head">
+    <div class="container">
+        <h1>{{ heading_title }}</h1>
+        <div class="breadcrumb">
+            {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- // Page Head -->
+
+
+<!-- Page Content -->
+<div class="page-content container">
+    <div class="row row-reverse">
+        <!-- Content Side -->
+        <div class="col-s-12 col-l-9">
+            {% if downloads %}
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <td class="text-right">{{ column_order_id }}</td>
+                    <td class="text-left">{{ column_name }}</td>
+                    <td class="text-left">{{ column_size }}</td>
+                    <td class="text-left">{{ column_date_added }}</td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {% for download in downloads %}
+                <tr>
+                  <td class="text-right">{{ download.order_id }}</td>
+                  <td class="text-left">{{ download.name }}</td>
+                  <td class="text-left">{{ download.size }}</td>
+                  <td class="text-left">{{ download.date_added }}</td>
+                  <td><a href="{{ download.href }}" data-toggle="tooltip" title="{{ button_download }}" class="btn btn-primary"><i class="fa fa-cloud-download"></i></a></td>
+                </tr>
+                {% endfor %}
+                </tbody>
+                
+              </table>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 text-left">{{ pagination }}</div>
+              <div class="col-sm-6 text-right">{{ results }}</div>
+            </div>
+            {% else %}
+            <p>{{ text_empty }}</p>
+            {% endif %}
+            <div class="buttons clearfix">
+              <div class="pull-right"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+            </div> 
+        </div>
+        <!-- // Content Side -->
+        
+        <!-- Widegets Side -->
+{{ column_left }}
+
+
+</div>
+</div>
+<!-- // Page Content -->
+
+{{ footer }}
+
