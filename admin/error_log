@@ -490,3 +490,12 @@ Stack trace:
 #4 /home/previewmahac/public_html/openc/admin/controller/catalog/product.php(23): Proxy->__call('addProduct', Array)
 #5 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerCatalogProduct->add()
 #6 /home/previewmahac/public_html/openc/admin/controller/startup/router.php(26): Action->execute(Objec in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40
+[07-Feb-2018 14:35:34 UTC] PHP Fatal error:  Uncaught Exception: Error: Duplicate entry '2016-0' for key 'PRIMARY'<br />Error No: 1062<br />INSERT INTO oc_product_to_layout SET product_id = '2016', store_id = '0', layout_id = '0' in /home/previewmahac/public_html/openc/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/previewmahac/public_html/openc/system/library/db.php(45): DB\MySQLi->query('INSERT INTO oc_...')
+#1 /home/previewmahac/public_html/openc/admin/model/catalog/product.php(136): DB->query('INSERT INTO oc_...')
+#2 /home/previewmahac/storage/modification/system/engine/loader.php(248): ModelCatalogProduct->addProduct(Array)
+#3 /home/previewmahac/public_html/openc/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/previewmahac/public_html/openc/admin/controller/catalog/product.php(23): Proxy->__call('addProduct', Array)
+#5 /home/previewmahac/storage/modification/system/engine/action.php(79): ControllerCatalogProduct->add()
+#6 /home/previewmahac/public_html/openc/admin/controller/startup/router.php(26): Action->execute(Objec in /home/previewmahac/public_html/openc/system/library/db/mysqli.php on line 40

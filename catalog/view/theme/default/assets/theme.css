@@ -547,7 +547,7 @@ label.box-style input:checked + h3{background:rgba(255,204,0,.15);border-color:#
 .description-table {
 
 }
-.table-responsive{min-width:980px!important;}
+.table-responsive{min-width:100%!important;}
 
 
 table th:nth-child(even) {
